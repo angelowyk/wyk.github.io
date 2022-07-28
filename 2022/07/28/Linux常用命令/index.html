@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Linux常用命令 | 一根儿狗</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="shutdown 命令格式： shutdown [选项] 时间 [信息] 时间–是必要参数，一定要加，可以用now，也可以用+5 信息–在关机的时候给用户的信息-t 这个参数后面需要加数字，比如5，表示在发出关机信号5秒后开始关机-k 不做真正的关机，只是通知一下所有的用户。-r 重启计算机-h 关机后关闭电源-f 在重新启动的时候跳过fsck（磁盘检查程序）-F 重启时，忽略fsck程序（同-f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux常用命令">
+<meta property="og:url" content="https://angelowyk.github.io/wyk.github.io/2022/07/28/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
+<meta property="og:site_name" content="一根儿狗">
+<meta property="og:description" content="shutdown 命令格式： shutdown [选项] 时间 [信息] 时间–是必要参数，一定要加，可以用now，也可以用+5 信息–在关机的时候给用户的信息-t 这个参数后面需要加数字，比如5，表示在发出关机信号5秒后开始关机-k 不做真正的关机，只是通知一下所有的用户。-r 重启计算机-h 关机后关闭电源-f 在重新启动的时候跳过fsck（磁盘检查程序）-F 重启时，忽略fsck程序（同-f">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-07-28T15:11:22.000Z">
+<meta property="article:modified_time" content="2022-07-28T15:14:56.237Z">
+<meta property="article:author" content="WYK">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/wyk.github.io/atom.xml" title="一根儿狗" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/wyk.github.io/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/wyk.github.io/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/wyk.github.io/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/wyk.github.io/" id="logo">一根儿狗</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/wyk.github.io/">Home</a>
+        
+          <a class="main-nav-link" href="/wyk.github.io/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/wyk.github.io/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://angelowyk.github.io/wyk.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Linux常用命令" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/wyk.github.io/2022/07/28/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="article-date">
+  <time class="dt-published" datetime="2022-07-28T15:11:22.000Z" itemprop="datePublished">2022-07-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Linux常用命令
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>shutdown 命令格式：<br> shutdown [选项] 时间 [信息]<br> 时间–是必要参数，一定要加，可以用now，也可以用+5<br> 信息–在关机的时候给用户的信息<br>-t 这个参数后面需要加数字，比如5，表示在发出关机信号5秒后开始关机<br>-k 不做真正的关机，只是通知一下所有的用户。<br>-r 重启计算机<br>-h 关机后关闭电源<br>-f 在重新启动的时候跳过fsck（磁盘检查程序）<br>-F 重启时，忽略fsck程序（同-f一样）<br>-c 取消已在执行的关机动作</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://angelowyk.github.io/wyk.github.io/2022/07/28/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" data-id="cl656bg630000fkng7243asu9" data-title="Linux常用命令" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/wyk.github.io/2022/07/28/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/wyk.github.io/archives/2022/07/">七月 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/wyk.github.io/2022/07/28/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Linux常用命令</a>
+          </li>
+        
+          <li>
+            <a href="/wyk.github.io/2022/07/28/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 WYK<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/wyk.github.io/" class="mobile-nav-link">Home</a>
+  
+    <a href="/wyk.github.io/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/wyk.github.io/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/wyk.github.io/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/wyk.github.io/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
