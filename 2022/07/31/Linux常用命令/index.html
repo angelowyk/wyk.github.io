@@ -8,16 +8,16 @@
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
 <meta name="keywords" content="">
-<meta name="description" content="$\textcolor{ProcessBlue}{目录}$ 1、系统信息查看2、关机、重启、登出3、系统日志4、端口查看5、进程查看6、文件和目录操作7、文件权限8、文件特殊属性9、文件搜索10、挂载11、用户和群组12、打包和压缩13、备份14、网络15、安装包管理 1.系统信息查看 查看处理器架构  arch、uname -m、lscpu  查看内核的版本   cat &#x2F;proc&amp;#">
+<meta name="description" content="目录  1、系统信息查看2、关机、重启、登出3、系统日志4、端口查看5、进程查看6、文件和目录操作7、文件权限8、文件特殊属性9、文件搜索10、挂载11、用户和群组12、打包和压缩13、备份14、网络15、安装包管理  1.系统信息查看 查看处理器架构  arch、uname -m、lscpu  查看内核的版本   cat &#x2F;proc&#x2F;version、uname -r  查看系">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux常用命令">
 <meta property="og:url" content="https://www.leagsoft.top/2022/07/31/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="一根儿狗">
-<meta property="og:description" content="$\textcolor{ProcessBlue}{目录}$ 1、系统信息查看2、关机、重启、登出3、系统日志4、端口查看5、进程查看6、文件和目录操作7、文件权限8、文件特殊属性9、文件搜索10、挂载11、用户和群组12、打包和压缩13、备份14、网络15、安装包管理 1.系统信息查看 查看处理器架构  arch、uname -m、lscpu  查看内核的版本   cat &#x2F;proc&amp;#">
+<meta property="og:description" content="目录  1、系统信息查看2、关机、重启、登出3、系统日志4、端口查看5、进程查看6、文件和目录操作7、文件权限8、文件特殊属性9、文件搜索10、挂载11、用户和群组12、打包和压缩13、备份14、网络15、安装包管理  1.系统信息查看 查看处理器架构  arch、uname -m、lscpu  查看内核的版本   cat &#x2F;proc&#x2F;version、uname -r  查看系">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.leagsoft.top/img/linux.jpg">
 <meta property="article:published_time" content="2022-07-31T03:33:03.066Z">
-<meta property="article:modified_time" content="2022-08-13T04:51:50.869Z">
+<meta property="article:modified_time" content="2022-08-13T05:11:31.497Z">
 <meta property="article:author" content="WYK">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://www.leagsoft.top/img/linux.jpg">
@@ -379,8 +379,10 @@
                     </div>
 
                     <article class="trm-card trm-publication">
-                        <p>$\textcolor{ProcessBlue}{目录}$</p>
+                        <p><strong>目录</strong></p>
+<hr>
 <p><strong>1、系统信息查看</strong><br><strong>2、关机、重启、登出</strong><br><strong>3、系统日志</strong><br><strong>4、端口查看</strong><br><strong>5、进程查看</strong><br><strong>6、文件和目录操作</strong><br><strong>7、文件权限</strong><br><strong>8、文件特殊属性</strong><br><strong>9、文件搜索</strong><br><strong>10、挂载</strong><br><strong>11、用户和群组</strong><br><strong>12、打包和压缩</strong><br><strong>13、备份</strong><br><strong>14、网络</strong><br><strong>15、安装包管理</strong></p>
+<hr>
 <h1 id="1-系统信息查看"><a href="#1-系统信息查看" class="headerlink" title="1.系统信息查看"></a>1.<strong>系统信息查看</strong></h1><ul>
 <li><p>查看处理器架构 </p>
 <p>arch、uname -m、lscpu</p>
@@ -581,10 +583,10 @@
 <h2 id="6-10-scp"><a href="#6-10-scp" class="headerlink" title="6.10 scp"></a>6.10 scp</h2><p>scp [可选参数] file_source file_target </p>
 <ul>
 <li><p>从本地复制到远程服务器的&#x2F;home&#x2F;目录</p>
-<p>scp  1.txt <a href="mailto:&#114;&#x6f;&#111;&#116;&#x40;&#49;&#x2e;&#x31;&#x2e;&#49;&#46;&#x31;">&#114;&#x6f;&#111;&#116;&#x40;&#49;&#x2e;&#x31;&#x2e;&#49;&#46;&#x31;</a>:&#x2F;home&#x2F;</p>
+<p>scp  1.txt <a href="mailto:&#114;&#x6f;&#x6f;&#x74;&#x40;&#49;&#x2e;&#x31;&#46;&#49;&#46;&#49;">&#114;&#x6f;&#x6f;&#x74;&#x40;&#49;&#x2e;&#x31;&#46;&#49;&#46;&#49;</a>:&#x2F;home&#x2F;</p>
 </li>
 <li><p>从远程复制到本地</p>
-<p>scp  <a href="mailto:&#x72;&#x6f;&#x6f;&#116;&#x40;&#x31;&#46;&#49;&#x2e;&#x31;&#x2e;&#x31;">&#x72;&#x6f;&#x6f;&#116;&#x40;&#x31;&#46;&#49;&#x2e;&#x31;&#x2e;&#x31;</a>:&#x2F;home&#x2F;tmp&#x2F;1.txt &#x2F;home&#x2F;tmp</p>
+<p>scp  <a href="mailto:&#114;&#111;&#111;&#116;&#64;&#x31;&#x2e;&#x31;&#x2e;&#x31;&#46;&#49;">&#114;&#111;&#111;&#116;&#64;&#x31;&#x2e;&#x31;&#x2e;&#x31;&#46;&#49;</a>:&#x2F;home&#x2F;tmp&#x2F;1.txt &#x2F;home&#x2F;tmp</p>
 </li>
 </ul>
 <h2 id="6-11-diff"><a href="#6-11-diff" class="headerlink" title="6.11 diff"></a>6.11 diff</h2><h2 id="6-12-清空文件"><a href="#6-12-清空文件" class="headerlink" title="6.12 清空文件"></a>6.12 清空文件</h2><ul>
